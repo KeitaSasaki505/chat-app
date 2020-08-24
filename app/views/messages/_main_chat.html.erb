@@ -7,24 +7,7 @@
 </div>
 
 <div class="middle-chat">
-  <div class="chat-now">
-    <div class="chat-user">
-      <div class="chat-name">Tom</div>
-      <div class="chat-date">2020/3/31(Wed) 12:43:30</div>
-    </div>
-    <div class="chat-comment">
-      <div class="chat-comments">おはよう</div>
-    </div>
-  </div>
-  <div class="chat-now">
-    <div class="chat-user">
-      <div class="chat-name">Tom</div>
-      <div class="chat-date">2020/3/31(Wed) 12:47:30</div>
-    </div>
-    <div class="chat-comment">
-      <div class="chat-comments">こんばんわ</div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 
